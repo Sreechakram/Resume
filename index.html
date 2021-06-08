@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15% 0 15%;
+}
+
+
+.hidden{
+    display: none;
+}
+.banner{
+    background-color: rgb(100, 93, 93);
+    width: 100%;
+    height: 350px;
+}
+.grey-stripe{
+    background-color:white;
+    width: 70%;
+    height: 40px;
+    position: absolute;
+    top: 250px;
+}
+.my-img{
+    height: 150px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    position: absolute;
+    top: 110px;
+    left: 52%;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    border: rgb(233, 196, 31) 5px dotted;
+}
+.title{
+    text-transform: uppercase;
+    background-color: rgb(233, 196, 31);
+    display: inline;
+    padding: 1% 2% 1% 2%;
+    font-size: 3rem;
+    font-weight: 600;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    position: absolute;
+    top: 229px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-225px);
+    -webkit-transform: translateX(-225px);
+    -moz-transform: translateX(-225px);
+    -ms-transform: translateX(-225px);
+    -o-transform: translateX(-225px);
+}
+.title-description{
+    text-align: center;
+    padding: 0.7%;
+}
+
+table{
+    width: 100%;
+}
+.icon{
+    color:rgb(233, 196, 31) ;
+    font-size: 2rem;
+    position: relative;
+    bottom: 60px;
+    left: 18px ;
+}
+.sub-heading{
+    display: inline;
+    font-size: 2rem;
+    color: rgb(95, 93, 93);
+    padding-left: 10px;  
+    position: relative;   
+    left: 55px;
+    bottom: 60px;
+}
+.description{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: justify;
+    position: relative;
+    bottom: 35px;
+}
+
+.list-padding{
+    padding-left: 5%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 100px  ;
+}
+.divider{
+    height: 1000px;
+    width: 2px;
+    background-color: rgb(95, 93, 93);
+    position: absolute;
+    left: 50%
+}
+hr{
+    margin-bottom: 3%;
+}
+
+.skills{
+    width: 100%;
+}
+
+.icon-background{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color:rgb(100, 93, 93) ;
+    position: absolute;
+}
+.border{
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px dotted  rgb(233, 196, 31);
+    position: relative;
+    bottom: 5.6px;
+    right: 5.5px;
+}
+        
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/7f08385778.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p class="hidden">Hello</p>
+        </div>
+        <div class="grey-stripe">
+            <p class="hidden">hello</p>
+        </div>
+        <img class="my-img" src="./sridharvembu.jpg" alt="image">
+        <p class="title">Sridhar Vembu </p>
+        <p class="title-description">Lorem | Ipsum | Lorem Ipsum</p>
+        <hr>
+    </header>
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <article class="">
+                        <div>
+                            <div class="icon-background"></div>
+                            <div class="border"></div>
+                            <i class="fas fa-user icon"></i> 
+                            <p class="sub-heading">Profile</p>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea animi illum quas praesentium suscipit enim officia voluptate aliquid, possimus, voluptatum distinctio dicta aut odio? Optio enim unde temporibus at aliquid</p>
+                    </article>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <article  class="description ">
+                        <div>
+                            <div class="icon-background"></div>
+                            <div class="border"></div>
+                            <i class="fas fa-flask icon"></i>
+                            <p class="sub-heading">Skills</p>
+                        </div>
+
+                        <table class="skills ">
+
+                            <tr>
+                                <td colspan="2" style="text-align:center"> <b> Technical Skills</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    HTML
+                                </td>
+                                <td>
+                                    <input type="range" name="" id="" class="" min="1" max="10" value="9" class="range">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    CSS
+                                </td>
+                                <td>
+                                    <input type="range" name="" id=""  min="1" max="10" value = "9">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Bootstrap
+                                </td>
+                                <td>
+                                    <input type="range" name="" id="" class="" min="1" max="10" value ="9" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Node Js
+                                </td>
+                                <td>
+                                    <input type="range" name="" id=""  min="1" max="10" value = "9">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mongo DB
+                                </td>
+                                <td>
+                                    <input type="range" name="" id="" class="" min="1" max="10"value="9" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    SQL
+                                </td>
+                                <td>
+                                    <input type="range" name="" id=""  min="1" max="10" value="9">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align:center"> <b> Other Skills</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Project Management
+                                </td>
+                                <td>
+                                    <input type="range" name="" id="" class="" min="1" max="10" value="9">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Editing
+                                </td>
+                                <td>
+                                    <input type="range" name="" id=""  min="1" max="10" value = "9">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Business Development
+                                </td>
+                                <td>
+                                    <input type="range" name="" id="" class="" min="1" max="10" value ="9" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Decession making
+                                </td>
+                                <td>
+                                    <input type="range" name="" id=""  min="1" max="10" value = "9">
+                                </td>
+                            </tr>
+                        </table>
+                    </article>
+                </td>
+            </tr>
+            <tr>
+                <td>
+    
+                    <article class="description">
+                        <div>
+                            <div class="icon-background"></div>
+                            <div class="border"></div>
+                            <i class="fas fa-briefcase icon"></i>
+                            <p class="sub-heading">Work Experience</p>
+                        </div>
+                         
+                        
+                        <p class="description"><b>Community Relations Manager</b></p>
+                        <ul class="list-padding description">
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis ducimus nobis sunt doloribus quisquam alias temporibus voluptatum reprehenderit, vero quo! Quos est veritatis placeat? Ex ullam alias similique asperiores?
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis ducimus nobis sunt doloribus quisquam alias temporibus voluptatum reprehenderit, vero quo! Quos est veritatis placeat? Ex ullam alias similique asperiores?
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis ducimus nobis sunt doloribus quisquam alias temporibus voluptatum reprehenderit, vero quo! Quos est veritatis placeat? Ex ullam alias similique asperiores?
+                            </li>
+                        </ul>
+                    </article>
+
+
+
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <article class="description ">
+                        <div>
+                            <div class="icon-background"></div>
+                            <div class="border"></div>
+                            <i class="fas fa-briefcase icon"></i> 
+                            <p class="sub-heading">Work Experience</p>
+                        </div>
+
+                        <p class="description"><b>Event Manager</b></p>
+                        <ul class="list-padding description">
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis ducimus nobis sunt doloribus quisquam alias temporibus voluptatum reprehenderit, vero quo! Quos est veritatis placeat? Ex ullam alias similique asperiores?
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis ducimus nobis sunt doloribus quisquam alias temporibus voluptatum reprehenderit, vero quo! Quos est veritatis placeat? Ex ullam alias similique asperiores?
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis ducimus nobis sunt doloribus quisquam alias temporibus voluptatum reprehenderit, vero quo! Quos est veritatis placeat? Ex ullam alias similique asperiores?
+                            </li>
+                        </ul>
+                    </article>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <article class="description">
+                        <div>
+                            <div class="icon-background"></div>
+                            <div class="border"></div>
+                            <i class="fas fa-graduation-cap icon"></i>
+                            <p class="sub-heading">Education</p>
+                        </div>
+                        
+                        
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint aut sed soluta? Esse nihil corrupti ullam. Autem accusamus qui vel doloremque nam nisi dolorum expedita, alias commodi cumque et facilis!</p>
+                        <p class="description"><b>Trained in DEHRADUN</b></p>
+                        <ul class="list-padding description">
+                           <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sint quidem tempore voluptates harum fugiat vero magnam voluptas at obcaecati placeat possimus ratione hic sapiente maiores, dignissimos voluptate alias aliquid!</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non blanditiis esse quam libero, nemo nostrum tempora perspiciatis porro aut voluptatibus neque quibusdam sapiente ut dignissimos sed! Eius, eveniet in!</li>
+                           <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga tempore sint culpa eos delectus praesentium magni vero dolorem ullam quasi saepe nulla, necessitatibus maiores libero omnis possimus illo numquam labore?</li>
+                           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iste quibusdam exercitationem laboriosam facere ipsa, qui accusantium ex consequatur sint saepe reiciendis cum, dolorem, voluptates incidunt maiores molestiae. Itaque, dicta?</li>
+                        </ul>
+                    </article>
+                    
+                </td>
+            </tr>
+        </table>
+        <div class="divider"></div>
+    </section>
+</body>
+</html>
+    
